@@ -6,11 +6,11 @@
       content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <title>My Journal Pages</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel='stylesheet' href='./styles/main-styles.css'/>
+    <link rel='stylesheet' href='./styles/styles.css'/>
   </head>
   <body>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  	<nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
 	  <a class="navbar-brand" href="#">My Journal Pages</a>
 	  
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#">Profile</a>
@@ -43,26 +43,91 @@
 	  </div>
 	</nav>
 
-    <div class='page'>
+	<div class="card page">
+	  <div class="card-body">
+	    <div class="row">
+		  <div class="col-sm-8 mt-2">
+		  	<a href="#" class="card-link">New Note</a>
+    		<a href="#" class="card-link">New Journal</a>
+    		<a href="#" class="card-link">New Blog</a>
+		  </div>
+		  <div class="col-sm-4">
+		  	<form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+		  </div>
+		</div>
+	  </div>
+	</div>
 
-    	<div class="container-fluid mt-2">
-		    <div class="row">
-  			  <div class="col-sm-4"></div>
-  			  <div class="col-sm-8 title align-right">Capture your ideas.</div>
-			</div>
-			<div class="row">
-			  <div class="col-sm-4"></div>
-  			  <div class="col-sm-8 title align-right">Anywhere.</div>
-			</div>
-			<div class="row">
-			  <div class="col-sm-9"></div>
-  			  <div class="col-sm-3 mt-2 pl-2">
-  			  	<button type="button" class="btn btn-outline-primary btn-lg btn-block shrink-button float-right">Learn More</button>
-  			  </div>
-			</div>
+	<br>
+
+	<div class='page-content'>
+
+		<div class="card journal-card">
+		  <div class="card-body">
+		    <h5 class="card-title">Example Journal Card</h5>
+		    <h6 class="card-subtitle mb-2 text-muted">Journal Subtitle</h6>
+		    <p class="card-text">Preview of journal content...</p>
+		    <a href="#" class="card-link">Open</a>
+		    <a href="#" class="card-link">Share</a>
+		  </div>
 		</div>
 
+		<div class="card journal-card">
+		  <div class="card-body">
+		    <h5 class="card-title">Example Journal Card</h5>
+		    <h6 class="card-subtitle mb-2 text-muted">Journal Subtitle</h6>
+		    <p class="card-text">Preview of journal content...</p>
+		    <a href="#" class="card-link">Open</a>
+		    <a href="#" class="card-link">Share</a>
+		  </div>
+		</div>
+
+		<div class="card blog-card">
+		  <div class="card-body">
+		    <h5 class="card-title">Example Blog Card</h5>
+		    <h6 class="card-subtitle mb-2 text-muted">Blog Subtitle</h6>
+		    <p class="card-text">Preview of blog content...</p>
+		    <a href="#" class="card-link">Open</a>
+		    <a href="#" class="card-link">Share</a>
+		  </div>
+		</div>
+
+		<div class="card note-card">
+		  <div class="card-body">
+		    <h5 class="card-title">Example Note Card</h5>
+		    <h6 class="card-subtitle mb-2 text-muted">Note Subtitle</h6>
+		    <p class="card-text">Preview of note content...</p>
+		    <a href="#" class="card-link">Open</a>
+		    <a href="#" class="card-link">Share</a>
+		  </div>
+		</div>
+
+		<div class="card note-card">
+		  <div class="card-body">
+		    <h5 class="card-title">Example Note Card</h5>
+		    <h6 class="card-subtitle mb-2 text-muted">Note Subtitle</h6>
+		    <p class="card-text">Preview of note content...</p>
+		    <a href="#" class="card-link">Open</a>
+		    <a href="#" class="card-link">Share</a>
+		  </div>
+		</div>
+
+		<div class="card note-card">
+		  <div class="card-body">
+		    <h5 class="card-title">Example Note Card</h5>
+		    <h6 class="card-subtitle mb-2 text-muted">Note Subtitle</h6>
+		    <p class="card-text">Preview of note content...</p>
+		    <a href="#" class="card-link">Open</a>
+		    <a href="#" class="card-link">Share</a>
+		  </div>
+		</div>
+    	
+
     </div>
+
 
 	<!-- This is to credit the photo -->
     <!-- <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@cikstefan?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Štefan Štefančík"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Štefan Štefančík</span></a> -->

@@ -1,0 +1,143 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    width: 100%;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    box-shadow: 10px 10px 5px grey;
+    /*margin: 10px;*/
+}
+
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    box-shadow: 10px 10px 5px grey;
+    /*margin: 10px;*/
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.journal-card {
+  width: 48%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.note-card {
+  width: 31%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.blog-card {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.title {
+	font-size: 3.5em;
+	font-weight: bold;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer a:link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:visited {
+  color: #007bff;
+
+}
+
+.footer a:hover {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.footer a:active {
+  color: #007bff;
+}
+
+/* Container holding the image and the text */
+/*.container {
+  padding: 2em;
+  position: relative;
+  text-align: center;
+  color: black;
+  width: 100%;
+  display: flex;
+}*/
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: inherit;
+}
+
+.align-right {
+	text-align:right;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .sign-up,
+    .feature-1,
+    .feature-2,
+    .feature-3 {
+      width: 50%;
+    }
+  }
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .page {
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .page-content {
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .header {
+      height: 400px;
+    }
+}

@@ -16,15 +16,10 @@
 }
 
 body {
-    background: url('./phone-index.jpg');
+  background: url('../images/phone-index-3.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-}
-
-.title {
-	font-size: 3.5em;
-	font-weight: bold;
 }
 
 .footer {
@@ -82,28 +77,36 @@ body {
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: #F09A9D; /* Red */
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .shrink-button {
+    width: 50%;
+    align-self: right;
   }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .sign-up,
-    .feature-1,
-    .feature-2,
-    .feature-3 {
-      width: 50%;
-    }
+  .title {
+    font-size: 3em;
+    font-weight: bold;
   }
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-    .page {
-      width: 1000px;
-      margin: 0 auto;
-    }
-    .header {
-      height: 400px;
-    }
+  .page {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .header {
+    height: 400px;
+  }
+
+  .title {
+    font-size: 3.5em;
+    font-weight: bold;
+  }
 }

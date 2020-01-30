@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     width: 100%;
     /*border-radius: 6px;*/
-    background-color: #f8f9fa;
+    /*background-color: #f8f9fa;*/
     /*box-shadow: 10px 10px 5px grey;*/
     /*margin: 5em;*/
 }
@@ -20,6 +20,11 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+}
+
+.title {
+	font-size: 3.5em;
+	font-weight: bold;
 }
 
 .footer {
@@ -53,22 +58,27 @@ body {
 }
 
 /* Container holding the image and the text */
-.container {
+/*.container {
+  padding: 2em;
   position: relative;
   text-align: center;
   color: black;
   width: 100%;
-}
+  display: flex;
+}*/
 
 /* Centered text */
 .centered {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   font-family: inherit;
 }
 
+.align-right {
+	text-align:right;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -90,7 +100,7 @@ body {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
     .page {
-      width: 100%;
+      width: 1000px;
       margin: 0 auto;
     }
     .header {

@@ -58,25 +58,28 @@ body {
 	font-size: 3.5em;
 	font-weight: bold;
 }
-
 .footer {
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 5px;
+        font-size: 12px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f8f9fa;
+  background-color: black; // #f8f9fa;
   color: white;
   text-align: center;
   padding: 10px;
 }
 
 .footer a:link {
-  color: #007bff;
+  color: white; // #007bff;
   text-decoration: none;
 }
 
 .footer a:visited {
-  color: #007bff;
+  color: grey; // #007bff;
 
 }
 
@@ -88,7 +91,6 @@ body {
 .footer a:active {
   color: #007bff;
 }
-
 /* Container holding the image and the text */
 /*.container {
   padding: 2em;

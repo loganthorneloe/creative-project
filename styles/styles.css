@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 * {
-  margin: 0;
+  margin: ;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 .page {
@@ -25,8 +28,88 @@
     /*margin: 10px;*/
 }
 
-body {
+.button0 {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    user-select: none;
+    vertical-align: middle;
+    transform: translate3d(0px, 0px, 0px);
+    background-color: lightblue;//rgb(29, 185, 84);
+    color: rgb(255, 255, 255);
+    border-width: 10px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 500px;
+    padding: 17px 48px;
+}
+.button1 {
+  border-radius: 25px;
+}
+
+.button2 {
+  border-radius: 25px;
+  background-color: white;
+  color: lightblue;
+}
+
+
+
+body{
   background-color: lightgrey;
+  //background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .journal-card {
@@ -54,16 +137,17 @@ body {
 }
 
 .title {
-        font-size: 3.5em;
-        font-weight: bold;
+	font-size: 3.5em;
+	font-weight: bold;
 }
 
 .footer {
-        display:grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 5px;
-        font-size: 12px;
-  position: fixed;
+	display:grid;
+	grid-template-columns: auto auto auto;
+        grid-gap: 0px;
+        grid-template-rows: 40px 20px 20px 20px 20px 20px;
+	font-size: 12px;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -92,6 +176,11 @@ body {
   color: #007bff;
 }
 
+h6,a{
+  margin:0;
+  padding:0;
+}
+
 
 
 /* Container holding the image and the text */
@@ -105,44 +194,49 @@ body {
 }*/
 
 /* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  font-family: inherit;
-}
 
 .align-right {
-        text-align:right;
+	text-align:right;
+}
+.align-center {
+	text-align:center;
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .shrink-button {
+    width: 50%;
+    align-self: right;
+  }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .sign-up,
-    .feature-1,
-    .feature-2,
-    .feature-3 {
-      width: 50%;
-    }
+  .title {
+    font-size: 3em;
+    font-weight: bold;
   }
+}
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 400px) {
     .page {
-      width: 1000px;
+      width: 100%;;
       margin: 0 auto;
     }
     .page-content {
-      width: 1000px;
+      width: 100%;
       margin: 0 auto;
     }
     .header {
       height: 400px;
+    }
+    .footer {
+      height: 400px;
+      width: 100%;
     }
 }
